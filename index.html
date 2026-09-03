@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarDance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=unbounded:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+<div class="stars"></div>
+<div class="stars stars--far"></div>
+    <header>
+        <nav>
+            <h2>StarDance</h2>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#events">Events</a>
+                <a href="#schedule">Schedule</a>
+                </div>
+                </nav>
+    </header>
+    <section id="home" class= "hero">
+        <div class="spotlight"aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="small-title"Feel the Rhythm</p>
+                <h1 class="reveal-title">
+                    <span style="--i:0">STAR<</<span class="accent" style="--i:1">
+                </h1>
+                <p>An intergalactic dance competition where rythm meets the stars.Join dancers from every corner of the galaxy as they battle it out for the ultimate title.</p>
+                <a href="#events"class="button">Join the Dance</a>
+        </div>
+    </section>
+    <div class="marquee"aria-hidden="true">
+        <div class="marquee-track">
+            <span>SOLO SHOWDOWN  DUO BATTLE CREW CHAMPIONSHIP  FOUR NIGHTS UNDER THE STARS  SOLO SHOWDON  DUO BATTLE  CREW CHAMPIONSHIP  FOUR NIGHTS UNDER THE STARS</span>
+            <span>SOLO SHOWDOWN  DUO BATTLE  CREW CHAMPIONSHIP  FOUR NIGHTS UNDER THE STARS  SOLO SHOWDOWN  DUO BATTLE  CREW CHAMPIONSHIP  FOUR NIGHTS UNDER THE STARS</span>
+    </div>
+    </div>
+    <section id="about">
+        <h2>About StarDance</h2>
+        <p>Stardance is a fiction, one of a kind dance competition that brings together performers from all styles and
+            backgronds to compete under  the stars. From contemporary to hip hop , every dancer gets a chance to shine on a stage unlike
+            any other.
+        </p>
+    </section>
+    <section id="events">
+        <h2>Events</h2>
+        <div class="event-container">
+            <div class="event-card">
+                <h3>Solo Showdown</h3>
+                <p>Individual dancers take the stage to showcase their unique style of dancing in front of the judges.</p>
+                </div>
+            <div class="event-card">
+                <h3>Duo Battle</h3>
+                <p>pairs go head to head , blending choreography and chemistry to win over the crowd.</p>
+                </div>
+            <div class="event-card">
+                <h3>Crew Championship</h3>
+                <p>Dance crews bring high energy group routines for the biggest prize of the night.</p>
+                </div>
+                </div>
+    </section>
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <p>Here's when each event takes place:</p>
+        <div class="schedule">
+            <p><strong>Day 1</strong>Opening Ceremony and Solo Showdown</p>
+            <p><strong>Day 2</strong>Duo battle Preliminaries</p>
+            <p><strong>Day 3</strong>Duo Battles Finals</p>
+            <p><strong>Day 4</strong>Crew Championship and Closing Ceremony</p>
+            </div>
+            </section>
+    <footer>
+        <p>&copy; 2026 StarDance. All rights reserved.</p>
+        <p>A fictional event created for design practice.</p>
+        </footer>
+        <script>
+            const timeline = document.querySelector('.schedule');
+            if(timeline){
+                const items = timeline.querySelectorAll('p');
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if(entry.isIntersecting){
+                            entry.target.classList.add('in-view');
+                        io.unobserve(entry.target);
+                        }
+                    });
+                },{
+                    threshold: 0.4});
+                    items.forEach(item => io.observe(item));
+            }
+        </script>
+        </body>
+</html>
