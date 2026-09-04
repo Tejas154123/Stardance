@@ -1,2 +1,2 @@
 # Stardance
-Its a fictional website on which people can explore and choose modes like solo dance couple dance and more.Thhe base of the website is made by me and all the animation part and fixing misplaced structure in spotlight part was done using ai tools 
+Its a fictional website on which people can explore and choose modes like solo dance couple dance and more.Thhe base of the website is made by me and all the animation part and fixing misplaced structure in spotlight part was done using ai tools . Fron page have been updated as suggested and all the dessign is slightly changed as a begginer i was not able to make it more attractive looking.
