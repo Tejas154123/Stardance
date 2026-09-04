@@ -10,10 +10,10 @@ html{
 }
 body{
     font-family: 'inter', Arial,sans-serif;
-    background: #0b0820;
-    color:white;
+    background: #510947;
+    color:rgb(0, 221, 255);
     line-height: 1.6;
-    position: relative;
+    position: constant;
     overflow-x: hidden;
 }
 
@@ -21,8 +21,8 @@ header {
     position: sticky;
     top:0;
     z-index: 1000;
-background:#100b2e;
-border-bottom: 1px solid #30265c;
+background:#755a95;
+border-bottom: 2px solid #30265c;
 }
 nav {
     max-width: 1100px;
@@ -42,12 +42,12 @@ display: flex;
 gap:25px;
 }
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color: rgba(238, 234, 9, 0.783);
+    text-decoration: underline;
+    font-weight: heavy;
 }
 .nav-links a:hover {
-    color: #ffd85a;
+    color: #0fe60c;
 }
 .hero {
     min-height: 90vh;
@@ -57,7 +57,7 @@ gap:25px;
     text-align: center;
     padding: 40px 20px;
 
-    background:radial-gradient(circle at center,#30206b, #0b0820 65%);
+    background:radial-gradient(circle at center,#289133, #6f1d5b 65%);
 
 }
 .hero-content {
@@ -77,18 +77,18 @@ gap:25px;
 margin: 20px 0;
 }
 .hero h1 span {
- color: #ffd85a;   
+ color: #3fea59;   
 }
 .hero-content>p:not(.small-title){
 font-size: 20px;
-color:#d7d2ed;
+color:#29dc8c;
 margin-bottom: 35px;
 }
 .button {
     display: inline-block;
     padding: 14px 30px;
-    background: #ffd85a;
-    color: #120d2c;
+    background: #57f5a1;
+    color: #90259e;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
@@ -98,7 +98,7 @@ margin-bottom: 35px;
 }
 .button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px #ffd85a55;
+    box-shadow: 0 10px 25px #4c8facb7;
 }
 section:not(.hero) {
     max-width: 1100px;
@@ -122,9 +122,9 @@ section>p{
         margin-top:40px;
     }
     .event-card {
-        background: #171236;
+        background: #e9ff85;
         border:1px solid #332a5d;
-        padding:30px;
+        padding:20px;
         border-radius: 20px;
         transition:0.3s;
         position: relative;
@@ -132,7 +132,7 @@ section>p{
     }
     .event-card:hover {
         transform: translateY(-8px);
-        border-color:#ffd85a;
+        border-color:#56f7a9;
     }
     .event-card h3 {
         font-family: 'unbounded', sans-serif;
@@ -140,7 +140,7 @@ section>p{
         margin-bottom: 10px;
     }
     .event-card p {
-        color:#c9c4df;
+        color:#5b41d0;
     }
     .schedule{
         margin-top: 30px;
@@ -165,7 +165,7 @@ section>p{
         z-index: 2;
     }
     footer p {
-        color: #aaa5c2;
+        color: #715bdc;
         margin-top:8px;
     }
     @media (max-width: 700px) {
@@ -190,11 +190,11 @@ section>p{
         z-index: 0;
         pointer-events: none;
         background-image:
-            radial-gradient(1.5px 1.5px at 20px 30px, #fff, transparent),
-            radial-gradient(1px 1px at 90px 70px, #fff, transparent),
+            radial-gradient(1.5px 1.5px at 20px 30px, #cfdf9a, transparent),
+            radial-gradient(1px 1px at 90px 70px, #a9e0a5, transparent),
             radial-gradient(1.5px 1.5px at 150px 20px, #ffd85a, transparent),
-            radial-gradient(1px 1px at 40px 130px, #fff, transparent),
-            radial-gradient(1px 1px at 170px 150px, #fff, transparent);
+            radial-gradient(1px 1px at 40px 130px, #ddbcbc, transparent),
+            radial-gradient(1px 1px at 170px 150px, #ddb8b8, transparent);
         background-repeat: repeat;
         background-size: 220px 220px;
         opacity: 0.55;
@@ -220,7 +220,7 @@ section>p{
         left: 50%;
         width: 700px;
         height: 700px;
-        background: radial-gradient(circle, #ffd85a55 0%, transparent 70%);
+        background: radial-gradient(triangle, #ffd85a55 0%, transparent 70%);
         transform: translate(-50%, -50%) scale(1);
         filter: blur(10px);
         z-index: 1;
@@ -269,9 +269,9 @@ section>p{
     .marquee{
         overflow: hidden;
         position: relative;
-        background: #100b2e;
-        border-top: 1px solid #30265c;
-        border-bottom: 1px solid #30265c;
+        background: #000000;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
         padding: 14px 0;
     }
     .marquee-track {
@@ -299,7 +299,7 @@ section>p{
     }
     .event-card::after {
         content: '';
-        position: absolute;
+        position:static ;
         top: 0;
         left: -60%;
         width: 40%;
@@ -323,7 +323,7 @@ section>p{
         left: 6px;
         width: 2px;
         bottom: 6px;
-        background: #332a5d;
+        background: #6e5eb2;
     }
     .schedule p {
         position: relative;
