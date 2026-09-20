@@ -20,11 +20,12 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, var(--bg-dark), var(--bg-mid) 40%, var(--bg-dark));
+  background: #05060f;
   color: var(--text-light);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
 }
+
 
 h1, h2, h3 {
   font-family: 'Unbounded', sans-serif;
