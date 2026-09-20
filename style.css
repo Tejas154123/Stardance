@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-weight: 600;
 }
 
@@ -81,7 +81,7 @@ a {
 .btn {
   display: inline-block;
   border-radius: 45px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-weight: 600;
   text-align: center;
 }
@@ -372,7 +372,7 @@ section h2 {
 
 .day-label {
   display: block;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: var(--cyan);
@@ -476,4 +476,3 @@ section h2 {
     animation: none;
   }
 }
-
