@@ -22,14 +22,13 @@ html {
 body {
   background: #05060f;
   color: var(--text-light);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
   overflow-x: hidden;
 }
 
-
 h1, h2, h3 {
-  font-family: 'Unbounded', sans-serif;
-  font-weight: 600;
+  font-family: 'Bowlby One SC', sans-serif;
+  font-weight: 400;
 }
 
 a {
