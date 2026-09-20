@@ -5,69 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarDance</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-   
-   
-    <section id="about">
-        <h2>About StarDance</h2>
-        <p>Stardance is a fiction, one of a kind dance competition that brings together performers from all styles and
-            backgronds to compete under  the stars. From contemporary to hip hop , every dancer gets a chance to shine on a stage unlike
-            any other.
-        </p>
-    </section>
-    <section id="events">
-        <h2>Events</h2>
-        <div class="event-container">
-            <div class="event-card">
-                <h3>Solo Showdown</h3>
-                <p> SOLO-Individual dancers take the stage to showcase their unique style of dancing in front of the judges.</p>
-                </div>
-            <div class="event-card">
-                <h3>Duo Battle</h3>
-                <p>DUO-pairs go head to head , blending choreography and chemistry to win over the crowd.</p>
-                </div>
-            <div class="event-card">
-                <h3>Crew Championship</h3>
-                <p>CREW-Dance crews bring high energy group routines for the biggest prize of the night.</p>
-                </div>
-                </div>
-    </section>
-    <section id="schedule">
-        <h2>Schedule</h2>
-        <p>Here's when each event takes place:</p>
-        <div class="schedule">
-            <p><strong>Day 1</strong>Solo battle</p>
-            <p><strong>Day 2</strong>Duo Battles Finals</p>
-            <p><strong>Day 3</strong>Crew Championship and Closing Ceremony</p>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">StarDance</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#events">Events</a>
+                <a href="#schedule">Schedule</a>
             </div>
-            </section>
-    <footer>
+
+            <a href="#events" class="btn btn-nav">Explore</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <div class="glow glow-top"></div>
+        <div class="glow glow-mid"></div>
+        <div class="glow glow-bottom"></div>
+
+        <div class="hero-content">
+            <h1>StarDance</h1>
+            <p>A one of a kind dance competition where every performer gets a chance to shine.</p>
+            <a href="#events" class="btn btn-primary">Explore Events</a>
+        </div>
+
+    </section>
+
+    <section id="events">
+
+        <h2>Events</h2>
+
+        <div class="hub">
+
+            <svg class="hub-lines" viewBox="0 0 900 480" preserveAspectRatio="none">
+                <line class="line" x1="450" y1="240" x2="170" y2="90"></line>
+                <line class="line line-2" x1="450" y1="240" x2="730" y2="90"></line>
+                <line class="line line-3" x1="450" y1="240" x2="450" y2="430"></line>
+            </svg>
+
+            <a href="#solo" class="btn btn-choice choice-solo">
+                Solo Showdown
+            </a>
+
+            <a href="#duo" class="btn btn-choice choice-duo">
+                Duo Battle
+            </a>
+
+            <a href="#crew" class="btn btn-choice choice-crew">
+                Crew Championship
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <h2>About StarDance</h2>
+
+        <div class="hub hub-about">
+
+            <div class="glow glow-about"></div>
+
+            <div class="tri tri-solo" id="solo">
+                <div class="tri-text">
+                    <h3>Solo Showdown</h3>
+                    <p>Individual dancers take the stage to showcase their unique style of dancing in front of the judges.</p>
+                </div>
+            </div>
+
+            <div class="tri tri-duo" id="duo">
+                <div class="tri-text">
+                    <h3>Duo Battle</h3>
+                    <p>Pairs go head to head, blending choreography and chemistry to win over the crowd.</p>
+                </div>
+            </div>
+
+            <div class="tri tri-crew" id="crew">
+                <div class="tri-text">
+                    <h3>Crew Championship</h3>
+                    <p>Dance crews bring high energy group routines for the biggest prize of the night.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p>
+            Stardance is a fiction, one of a kind dance competition that brings together performers from all styles and
+            backgronds to compete under the stars. From contemporary to hip hop, every dancer gets a chance to shine on
+            a stage unlike any other.
+        </p>
+
+    </section>
+
+    <section id="schedule">
+
+        <h2>Schedule</h2>
+
+        <div class="hub hub-schedule">
+
+            <div class="glow glow-schedule"></div>
+
+            <div class="day day-top">
+                <span class="day-label">Day 1</span>
+                <p>Solo battle</p>
+            </div>
+
+            <div class="day day-left">
+                <span class="day-label">Day 2</span>
+                <p>Duo Battles Finals</p>
+            </div>
+
+            <div class="day day-right">
+                <span class="day-label">Day 3</span>
+                <p>Crew Championship and Closing Ceremony</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="logo logo-small">StarDance</div>
+
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#schedule">Schedule</a>
+        </div>
+
         <p>&copy; 2026 StarDance. All rights reserved.</p>
         <p>A fictional event created for design practice.</p>
-        </footer>
-        <script>
-            const timeline = document.querySelector('.schedule');
-            if(timeline){
-                const items = timeline.querySelectorAll('p');
-                const io = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if(entry.isIntersecting){
-                            entry.target.classList.add('in-view');
-                        io.unobserve(entry.target);
-                        }
-                    });
-                },{
-                    threshold: 0.4});
-                    items.forEach(item => io.observe(item));
-            }
-        </script>
-        </body>
+
+    </footer>
+
+</body>
 </html>
