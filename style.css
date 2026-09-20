@@ -1,228 +1,80 @@
-:root {
-  --ink: #050506;
-  --paper: #f5dfa8;
-  --teal: #2ecdbb;
-  --teal-dark: #1b796f;
-  --blue: #3653eb;
-  --pink: #f491a6;
-  --red: #bd3a38;
-  --white: #fbfbff;
-  --border: 3px solid var(--ink);
+/* arabic */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAIRsdO_q.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
 }
-
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  background: var(--ink);
-  color: var(--white);
-  font-family: "Nunito Sans", Arial, sans-serif;
+/* vietnamese */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAI5sdO_q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
-
-button, a { font: inherit; }
-a { color: inherit; text-decoration: none; }
-
-.site-header {
-  width: min(1180px, calc(100% - 32px));
-  min-height: 82px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 20;
+/* latin-ext */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAI9sdO_q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
-.brand {
-  color: #60d6ff;
-  font: 400 clamp(1.55rem, 4vw, 2.45rem) / 1 "Black Ops One", system-ui;
-  letter-spacing: 0.04em;
-  text-shadow: 3px 3px 0 #133556;
+/* latin */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAIFsdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-.nav { display: flex; gap: 22px; font-weight: 900; }
-.nav a { padding: 8px 3px; border-bottom: 2px solid transparent; }
-.nav a:hover, .nav a:focus-visible { border-color: var(--teal); color: var(--teal); }
-
-.menu-button {
-  display: none;
-  border: 0;
-  background: transparent;
-  color: var(--white);
-  font-size: 1.75rem;
-  cursor: pointer;
+/* arabic */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAIRsdO_q.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
 }
-
-main { overflow: hidden; }
-section { position: relative; padding: 90px 20px; }
-.wrap { width: min(1080px, 100%); margin: 0 auto; }
-.display { font-family: "Bowlby One SC", Impact, sans-serif; letter-spacing: 0.02em; }
-
-/* Abstract teal shape inspired by the hand-cut brush artwork in the Figma design. */
-.brush {
-  position: absolute;
-  width: 365px;
-  height: 330px;
-  background: linear-gradient(135deg, #0b6f67, var(--teal-dark) 45%, #35c8bc);
-  clip-path: polygon(11% 97%, 28% 6%, 36% 44%, 49% 0, 58% 42%, 78% 6%, 69% 57%, 97% 22%, 76% 91%, 100% 79%, 18% 100%);
-  opacity: 0.95;
-  pointer-events: none;
+/* vietnamese */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAI5sdO_q.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
-
-.brush::after {
-  content: "";
-  position: absolute;
-  inset: 7%;
-  background: repeating-linear-gradient(132deg, transparent 0 30px, rgba(3, 21, 22, 0.28) 31px 33px, transparent 34px 58px);
-  clip-path: inherit;
+/* latin-ext */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAI9sdO_q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
-.hero {
-  min-height: min(760px, calc(100vh - 82px));
-  display: grid;
-  place-items: center;
-  padding-top: 35px;
+/* latin */
+@font-face {
+  font-family: 'Baloo Bhaijaan 2';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v21/zYX9KUwuEqdVGqM8tPDdAA_Y-_bMAIFsdA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-.hero .wrap { display: grid; place-items: center; text-align: center; }
-.eyebrow { color: var(--teal); font-weight: 900; letter-spacing: 0.18em; text-transform: uppercase; }
-
-.hero h1 {
-  max-width: 950px;
-  margin: 10px 0 20px;
-  font-size: clamp(3.1rem, 11vw, 8rem);
-  line-height: 0.89;
+/* latin-ext */
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/bowlbyonesc/v27/DtVlJxerQqQm37tzN3wMug9P_gH2ojhN.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
-.hero h1 span { display: block; color: var(--paper); }
-.hero-copy { max-width: 600px; margin: 0 auto 28px; color: #d5d5df; font-size: clamp(1rem, 2vw, 1.15rem); font-weight: 700; }
-
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  border: var(--border);
-  background: var(--teal);
-  color: var(--ink);
-  box-shadow: 7px 7px 0 #18776c;
-  cursor: pointer;
-  font-weight: 900;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.button:hover { transform: translate(4px, 4px); box-shadow: 3px 3px 0 #18776c; }
-.hero-brush { left: 7%; bottom: -105px; transform: rotate(-19deg); opacity: 0.6; }
-
-.star {
-  position: absolute;
-  width: 11px;
-  aspect-ratio: 1;
-  background: var(--paper);
-  clip-path: polygon(50% 0, 61% 37%, 100% 50%, 61% 62%, 50% 100%, 39% 62%, 0 50%, 39% 37%);
-}
-.star.one { top: 20%; left: 12%; }
-.star.two { top: 29%; right: 14%; transform: scale(1.7); }
-.star.three { right: 21%; bottom: 18%; transform: scale(0.75); }
-
-.about { background: #020203; }
-
-.section-title {
-  display: table;
-  margin: 0 auto 45px;
-  padding: 11px 42px;
-  border: var(--border);
-  color: var(--ink);
-  font: 400 clamp(1.7rem, 4vw, 3rem) / 1 "Bowlby One SC", Impact, sans-serif;
-  text-align: center;
-}
-
-.about-title { background: linear-gradient(90deg, #e7979e, #c52728); }
-
-.about-intro {
-  max-width: 640px;
-  margin: 0 auto 42px;
-  padding: 13px 17px;
-  border: var(--border);
-  background: #9bc17a;
-  color: var(--ink);
-  text-align: center;
-  font-weight: 900;
-}
-
-.categories {
-  display: grid;
-  grid-template-columns: 1fr 290px 1fr;
-  align-items: center;
-  gap: 28px;
-}
-
-.category {
-  min-height: 160px;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  border: var(--border);
-  background: #4454ed;
-  color: var(--white);
-  text-align: center;
-  font-size: 1.07rem;
-  font-weight: 900;
-}
-
-.category p { margin: 0; }
-.category strong { display: block; letter-spacing: 0.03em; text-transform: uppercase; }
-.category-art { position: relative; grid-row: 1 / span 2; grid-column: 2; min-height: 290px; }
-.category-art .brush { position: absolute; inset: 0; width: 100%; height: 100%; }
-.crew-card { grid-column: 2; min-height: 120px; }
-
-.schedule { padding-bottom: 115px; }
-.schedule .wrap { position: relative; z-index: 1; }
-.schedule-brush { top: 170px; left: 50%; z-index: 0; transform: translateX(-50%) rotate(-7deg); }
-.schedule-title { margin-bottom: 78px; background: var(--paper); }
-
-.timeline { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 65px 140px; }
-
-.event {
-  padding: 13px 18px;
-  border: var(--border);
-  background: linear-gradient(90deg, #2849df 0%, #3156ed 55%, #aaa 100%);
-  color: var(--white);
-  text-align: center;
-  font: 400 clamp(1rem, 2vw, 1.38rem) / 1.25 "Bowlby One SC", Impact, sans-serif;
-}
-
-.day1 { grid-column: 1 / -1; width: max-content; max-width: 100%; margin: 0 auto; }
-.day3 { justify-self: end; }
-.schedule-note { max-width: 660px; margin: 55px auto 0; color: #d9d9e0; text-align: center; font-weight: 800; }
-
-footer { padding: 30px 20px; border-top: 2px solid #25252b; color: #bfbfc9; text-align: center; font-size: 0.9rem; }
-
-@media (max-width: 720px) {
-  .site-header { min-height: 68px; }
-  .menu-button { display: block; }
-
-  .nav {
-    display: none;
-    position: absolute;
-    top: 65px;
-    right: 0;
-    flex-direction: column;
-    gap: 5px;
-    padding: 12px 20px;
-    border: var(--border);
-    background: #121216;
-  }
-
-  .nav.open { display: flex; }
-  section { padding: 65px 18px; }
-  .categories, .timeline { grid-template-columns: 1fr; }
-  .categories { gap: 20px; }
-  .category, .crew-card, .category-art { grid-column: auto; grid-row: auto; }
-  .category-art { order: 3; height: 260px; min-height: 0; }
-  .crew-card { order: 4; }
-  .timeline { gap: 25px; }
-  .day1, .day3 { grid-column: auto; width: auto; justify-self: stretch; }
-  .schedule-brush { top: 270px; transform: translateX(-50%) rotate(-7deg) scale(0.84); }
-  .section-title { padding-inline: 22px; }
+/* latin */
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/bowlbyonesc/v27/DtVlJxerQqQm37tzN3wMug9P_g_2og.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
